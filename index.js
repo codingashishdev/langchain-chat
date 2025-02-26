@@ -21,10 +21,8 @@ submit.addEventListener("click", async (e) => {
   query.value = '';
   
   try {
-    // Show typing indicator
     const typingIndicator = addTypingIndicator();
     
-    // Send request to backend
     const response = await fetch('http://localhost:3000/chat', {
       method: 'POST',
       headers: {
