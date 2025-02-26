@@ -14,10 +14,8 @@ submit.addEventListener("click", async (e) => {
   const queryData = query.value.trim();
   if (!queryData) return;
   
-  // Add user message to chat
   addMessage(queryData, 'user');
   
-  // Clear input
   query.value = '';
   
   try {
