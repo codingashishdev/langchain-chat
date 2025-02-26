@@ -3,15 +3,32 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal Chat Box</title>
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
-    <div class="container">
-      <label for="query">Chat</label>
-      <input type="text" name="query" id="query">
-      <button type="submit" id="submit" style="cursor: pointer;">Result</button>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h1>AI Chat Assistant</h1>
+      </div>
+      
+      <div class="messages-container">
+        <div class="welcome-message">
+          <p>👋 Hello! I'm your AI assistant. Ask me anything!</p>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+          <!-- Messages will appear here -->
+        </div>
+      </div>
+      
+      <div class="input-area">
+        <input type="text" id="query" placeholder="Type your message here..." autocomplete="off">
+        <button id="submit">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
     </div>
-    <div class="result"></div>
     <script src="index.js"></script>
   </body>
 </html>
