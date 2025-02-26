@@ -7,6 +7,7 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
+# VS Code configuration directory
 .vscode
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
